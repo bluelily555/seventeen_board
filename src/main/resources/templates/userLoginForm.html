@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+  $(document).ready(function() {
+    let message = "[[${msg}]]";
+    if (message != "") {
+      alert(message);
+    }else {
+    }
+  })
+</script>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <style>
+    .login_form{
+      width: 95vw;
+      height: 95vh;
+    }
+
+    .login_form input{
+      width: 20%;
+      margin-right: 79%;
+    }
+  </style>
+</head>
+<body>
+  <div class="login_form">
+    <form action="/user/login" method="post">
+      <label>로그인</label>
+      <input name="id" placeholder="아이디">
+      <input type="password" name="pwd" placeholder="비밀번호">
+      <button type="submit">로그인</button>
+    </form>
+    <a href="/user/joinForm">회원가입</a>
+
+  </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .join_info{
+            width: 95vw;
+            height: 95vh;
+        }
+
+        .join_info input{
+            width: 20%;
+            margin-right: 79%;
+        }
+    </style>
+    <!--
+    비밀번호, 비밀번호 확인 같은지 체크하기
+    -->
+</head>
+<body>
+
+    <div class="join_info">
+        <form action="/user/join" method="post">
+            아이디 <input type="text" name="id" max="20">
+
+            비밀번호 <input type="password" name="pwd" max="30">
+            비밀번호 확인 <input type="password" name="pwd_Check" max="30">
+
+            사용자명 <input type="text" name="nickname" max="20">
+
+            이메일 <input type="text" name="email" max="50">
+
+            <button type="submit" id="save">저장</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
